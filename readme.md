@@ -100,7 +100,7 @@ Pour déployer le plugin il faut installer `gradle`
 
 #### **Iformation json file xnat**
 
-Sur xnat allez dans le fichier **/var/lib/tomcat8/xnat_config_xnat_run_pipeline.json**
+Sur xnat allez dans le fichier **/var/lib/tomcat8/xnat_config_run_pipeline_cluster.json**
 
 * **xnat_batch_scripts** : répertoire où seront stockés les scripts bash générés et leurs propres fichiers des logs (.out et .err)
 * **data_xnat** : le nom du répertoire partagé par tous les membres d'une équipe et qui contient l'ensemble des données, les résultats des calculs lancés par chaque membre.
@@ -117,7 +117,7 @@ Sur xnat allez dans le fichier **/var/lib/tomcat8/xnat_config_xnat_run_pipeline.
 
 Pour rajouter une nouvelle image :
 
-Sur xnat allez dans le fichier **/var/lib/tomcat8/xnat_config_xnat_run_pipeline.json**
+Sur xnat allez dans le fichier **/var/lib/tomcat8/xnat_config_run_pipeline_cluster.json**
 
 * la clé : **listPipelines : ajouter le nom de l'image.**
 * copier - coller une image déjà existante et modifiez la, avec les paramètres de la nouvelle image.
