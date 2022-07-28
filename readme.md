@@ -79,11 +79,11 @@ Pour déployer le plugin il faut installer `gradle`
    ```
    ~$: cd XnatRunPipeline/build/libs
    ```
-4. Le plugin `xnat-plugin-run-pipeline-data-1.1.1.jar` sera généré
+4. Le plugin `xnat-plugin-run-pipeline-cluster-1.1.1.jar` sera généré
 5. Ce plugin doit ensuite être copié dans le dossier des plugins de XNAT (voir la configuration de XNAT, généralement dans `/data/xnat/home/plugins`).
 
    ```
-   ~$: scp xnat-plugin-run-pipeline-data-1.1.1.jar xnat@10.164.0.44:/data/xnat/home/plugins
+   ~$: scp xnat-plugin-run-pipeline-cluster-1.1.1.jar xnat@10.164.0.44:/data/xnat/home/plugins
    ```
 6. Redémarrer **tomcat sur xnat**
 
@@ -136,6 +136,6 @@ Sur xnat allez dans le fichier **/var/lib/tomcat8/xnat_config_run_pipeline_clust
   * **work_dir_params** : le param workdir si la commande l'exige (e.g -w)
   * **basicParameters** : autres paramètres qui peuvent être utiles à la commande, pour pouvez mettre d'autres paramètres qui vont être ajouter à la fin de la commande par défaut.
 
-# **Documentation **
+# Documentation du code
 
-  [documentation des code plugin xnat-run-pipeline](./doc-fonction-plugin-xnat-run-pipeline.md)
+  [documentation du code  plugin xnat-plugin-run-pipeline-cluster](./doc-fonction-plugin-xnat-run-pipeline.md)
